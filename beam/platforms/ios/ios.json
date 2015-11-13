@@ -4,78 +4,13 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"BackgroundMode\"><param name=\"ios-package\" value=\"APPBackgroundMode\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "*-Info.plist": {
-                "parents": {
-                    "UIBackgroundModes": [
-                        {
-                            "xml": "<array><string>audio</string></array>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        },
-        "de.appplant.cordova.plugin.background-mode": {
             "PACKAGE_NAME": "com.redventures.beam"
         }
     },
     "dependent_plugins": {},
-    "modules": [
-        {
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-device/www/device.js",
-            "id": "cordova-plugin-device.device",
-            "pluginId": "cordova-plugin-device",
-            "clobbers": [
-                "device"
-            ]
-        },
-        {
-            "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
-            "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
-            "pluginId": "de.appplant.cordova.plugin.background-mode",
-            "clobbers": [
-                "cordova.plugins.backgroundMode",
-                "plugin.backgroundMode"
-            ]
-        }
-    ]
+    "modules": []
 }

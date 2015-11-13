@@ -7,19 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        },
-        "de.appplant.cordova.plugin.background-mode": {
             "PACKAGE_NAME": "com.redventures.beam"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.redventures.beam"
-        }
-    }
+    "dependent_plugins": {}
 }
