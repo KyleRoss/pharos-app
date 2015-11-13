@@ -75,7 +75,8 @@
     .module('beam', [
       'auth0',
       'ui.router',
-      'ngMaterial'
+      'ngMaterial',
+      'ngCordova'
     ])
     .config(config)
     .run(run);
