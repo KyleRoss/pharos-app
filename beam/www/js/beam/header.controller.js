@@ -17,8 +17,6 @@
     };
   }
 
-  HeaderCtrl.$inject = ['$mdSidenav', '$mdDialog', '$state', 'auth'];
-
   angular
     .module('beam')
     .controller('HeaderCtrl', HeaderCtrl);
