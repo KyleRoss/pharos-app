@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>378940E9-78D8-4E46-BEA1-E5E607721AC4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Beam</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2BBFC4122A5E33F5C595D4CEABBA924D3E3F81FC</key>
+		<string>https://github.com/rv-pharos/pharos-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>beam/platforms/ios/Beam.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2BBFC4122A5E33F5C595D4CEABBA924D3E3F81FC</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rv-pharos/pharos-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2BBFC4122A5E33F5C595D4CEABBA924D3E3F81FC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2BBFC4122A5E33F5C595D4CEABBA924D3E3F81FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pharos-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
