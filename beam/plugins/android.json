@@ -4,29 +4,20 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.redventures.beam"
+        },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.redventures.beam"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.redventures.beam"
+        },
+        "de.appplant.cordova.plugin.background-mode": {
+            "PACKAGE_NAME": "com.redventures.beam"
         }
     },
     "dependent_plugins": {}
