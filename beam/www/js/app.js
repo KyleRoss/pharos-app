@@ -25,6 +25,29 @@
 
 
     $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('root', {
+        views: {
+          'header': {
+            templateUrl: 'templates/header.tpl.html',
+            controller: 'HeaderCtrl as header'
+          },
+          'footer': {
+            templateUrl: 'templates/footer.tpl.html',
+            controller: 'FooterCtrl as footer'
+          }
+        }
+      })
+      .state('root.landing', {
+        url: '/'
+        views: {
+          '@': {
+            templateUrl: 'templates/landing.tpl.html',
+            controller: 'BaseCtrl as base'
+          }
+        }
+      });
   }
 
   function run($rootScope, auth, token) {
@@ -71,6 +94,12 @@
 
   }
 
+  function BaseCtrl() {
+    var vm = this;
+
+    vm.text = 'Look at my cool text';
+  }
+
   angular
     .module('beam', [
       'auth0',
@@ -79,5 +108,6 @@
       'ngCordova'
     ])
     .config(config)
-    .run(run);
+    .run(run)
+    .controller('BaseCtrl', BaseCtrl);
 })();
