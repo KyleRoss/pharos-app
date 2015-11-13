@@ -1,0 +1,35 @@
+{
+  "name": "pharos-app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rv-pharos/pharos-app",
+  "authors": [
+    "Jeff Treleaven <jtreleaven@redventures.com>",
+    "Ted Piecora <mpiecora@redventures.com>",
+    "Kyle Ross <kross@redventures.com>",
+    "Wes Dews <wdews@redventures.com>",
+    "Alex Fernandez <afernandez@redventures.com>"
+  ],
+  "description": "beam front end mobile phonegap application",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCordova": "~0.1.23-alpha",
+    "angular-ui-router": "~0.2.15",
+    "angular-storage": "~0.5.0",
+    "angular-jwt": "~0.0.9",
+    "auth0-angular": "~4.0.5",
+    "angular-material": "~0.11.4"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
+  }
+}
