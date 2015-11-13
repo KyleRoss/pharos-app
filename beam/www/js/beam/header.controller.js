@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function HeaderCtrl($mdSidenav, $mdDialog, store, $state, auth) {
+  function HeaderCtrl($mdSidenav, $mdDialog, $state, auth) {
     var vm = this;
 
     vm.openMenu = function () {
@@ -16,6 +16,8 @@
       $mdOpenMenu(ev);
     };
   }
+
+  HeaderCtrl.$inject = ['$mdSidenav', '$mdDialog', '$state', 'auth'];
 
   angular
     .module('beam')
