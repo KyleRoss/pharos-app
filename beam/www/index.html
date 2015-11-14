@@ -60,9 +60,9 @@
     <link rel="stylesheet" type="text/css" href="css/project.min.css" />
     <title>Beam</title>
   </head>
-  <body>
-    <!-- <header ui-view="header"></header> -->
-    <div ui-view></div>
-    <footer ui-view="footer"></footer>
+  <body ng-class="$state.name">
+    <header ui-view="header" class="header"></header>
+    <div ui-view class="main"></div>
+    <footer ui-view="footer" class="footer"></footer>
   </body>
 </html>

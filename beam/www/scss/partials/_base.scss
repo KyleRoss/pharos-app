@@ -1,5 +1,40 @@
+
 body {
     font: 12px 'Roboto', sans-serif;
     text-transform: none;
 }
 // body
+
+
+.header {
+    display: none;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+    z-index: 15;
+}
+// .content
+
+.main {
+    height: 100%;
+    padding: 50px 20px 0 20px;
+    position: relative;
+}
+// .main
+
+.logo {
+    width: 52%;
+    margin: 0 auto;
+    max-width: 300px;
+
+    img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+    // img
+
+}
+// .logo

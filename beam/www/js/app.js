@@ -100,6 +100,12 @@
   function BaseCtrl() {
     var vm = this;
 
+    vm.bizzles = new Array(100);
+    for (var i =0; i < vm.bizzles.length; i++) {
+      vm.bizzles[i] = {
+        i: "butts"
+      };
+    }
     vm.text = 'What are you looking for?';
   }
 
