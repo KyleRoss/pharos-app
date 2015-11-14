@@ -85,7 +85,6 @@
 
       $state.go('root.landing', {}, {reload: true});
     };
-
   }
 
   function BaseCtrl() {
