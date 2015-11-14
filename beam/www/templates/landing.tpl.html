@@ -1,3 +1,23 @@
-<md-content>
-  <p ng-bind="base.text"></p>
-</md-content>
+<div class="bokeh">
+    <div class="bokeh__light" ng-repeat="shizzles in base.bizzles"></div>
+</div>
+<!-- /.bokeh -->
+
+<div class="content">
+
+    <div class="logo"><img src="/img/logo.png" alt="Beam"></div>
+
+    <md-input-container>
+        <label>Email</label>
+        <input ng-model="user.title">
+    </md-input-container>
+
+    <md-input-container>
+        <label>Password</label>
+        <input ng-model="user.password">
+    </md-input-container>
+
+    <div class="button button--blue button--full">Beam Me Up</div>
+
+</div>
+<!-- /.content -->

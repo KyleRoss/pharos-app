@@ -1,0 +1,23 @@
+////
+// Buttons
+////
+
+.button {
+   border-radius: 40px;
+   font-size: 18px;
+   line-height: 60px;
+   text-align: center;
+   text-transform: uppercase;
+}
+// .button
+
+.button--blue {
+    background-color: $color-blue;
+    color: $color-white;
+}
+// .button--blue
+
+.button--full {
+    width: 100%;
+}
+// .button--full

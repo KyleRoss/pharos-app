@@ -1,0 +1,12 @@
+.heading {
+    font-weight: 300;
+
+    &--block {
+        background: $color-aqua;
+        border-bottom: 5px solid $color-cyan;
+        color: #fff;
+        padding: 2.5em 0;
+    }
+    // &--block
+}
+// .heading

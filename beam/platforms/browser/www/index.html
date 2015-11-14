@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="beam">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- VENDOR SCRIPTS -->
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="vendor/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="vendor/angular-jwt/dist/angular-jwt.js"></script>
+    <script type="text/javascript" src="vendor/angular-material-icons/angular-material-icons.js"></script>
+    <script type="text/javascript" src="vendor/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="vendor/angular-storage/dist/angular-storage.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/auth0.js/build/auth0.js"></script>
+    <script type="text/javascript" src="vendor/auth0-angular/build/auth0-angular.js"></script>
+    <script type="text/javascript" src="vendor/auth0-lock/build/auth0-lock.js"></script>
+    <script type="text/javascript" src="vendor/ngCordova/dist/ng-cordova.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- END VENDOR SCRIPTS -->
+
+    <!-- APP SCRIPTS -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/beam/header.controller.js"></script>
+    <script type="text/javascript" src="js/beam/footer.controller.js"></script>
+    <script type="text/javascript" src="js/interceptors/http.interceptor.js"></script>
+    <!-- END APP SCRIPTS -->
+
+    <link rel="stylesheet" type="text/css" href="vendor/angular-material/angular-material.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/angular-material-icons/angular-material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Beam</title>
+  </head>
+  <body>
+    <header ui-view="header"></header>
+    <div ui-view></div>
+    <footer ui-view="footer"></footer>
+  </body>
+</html>

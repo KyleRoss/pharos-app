@@ -41,6 +41,15 @@
             controller: 'BaseCtrl as base'
           }
         }
+      })
+      .state('root.home', {
+        url: '/home',
+        views: {
+          '@': {
+            templateUrl: 'templates/home.tpl.html',
+            controller: 'HomeCtrl as home'
+          }
+        }
       });
   }
 
@@ -90,7 +99,13 @@
   function BaseCtrl() {
     var vm = this;
 
-    vm.text = 'Look at my cool text';
+    vm.bizzles = new Array(100);
+    for (var i =0; i < vm.bizzles.length; i++) {
+      vm.bizzles[i] = {
+        i: "butts"
+      };
+    }
+    vm.text = 'What are you looking for?';
   }
 
   angular

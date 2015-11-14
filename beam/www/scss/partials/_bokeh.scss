@@ -1,0 +1,71 @@
+$colorCollection: (#e9efd8, #d0edce, #f1f6cb, #a0e2c7);
+
+$lights: 90;
+$textColor: #FFFFFF;
+$totalAnimation: 5;
+$lightSize: 75;
+$blurLevel: 2;
+
+
+.bokeh {
+    background-color: #90debf;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    &__light {
+        border-radius: 50%;
+        opacity: 0;
+        position: absolute;
+    }
+    // &__light
+
+}
+// .bokeh
+
+
+
+@for $i from 1 through $lights {
+    $lightWidth: $lightSize + random(25);
+    $lightHeight: $lightWidth;
+    $lightVertical: random(100);
+    $lightHorizontal: random(100);
+    $lightBlur: $blurLevel + random($blurLevel);
+    $lightDelay: 10 + random(25);
+    $animation: 1 + random($totalAnimation);
+
+    .bokeh__light:nth-child(#{$i}) {
+        width: $lightWidth + px;
+        height: $lightHeight + px;
+        top: #{$lightVertical + "%"};
+        left: #{$lightHorizontal + "%"};
+        background: nth($colorCollection, random(length($colorCollection)));
+     filter: blur($lightBlur + px);
+        animation: #{$lightDelay + s} #{"light" + $animation} linear infinite;
+    }
+    // .bokeh__light:nth-child(#{$i})
+
+}
+// @for $i from 1 through $lights {
+
+@for $i from 1 through $totalAnimation {
+    @keyframes light#{$i} {
+        25%{
+            opacity: (25 + random(50)) * 0.01;
+        }
+        50%{
+            opacity: 0;
+        }
+        75%{
+            opacity: (25 + random(50)) * 0.01;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}
