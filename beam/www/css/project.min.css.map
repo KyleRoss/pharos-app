@@ -1,0 +1,1 @@
+{"version":3,"sources":["stdin","www/scss/partials/_base.scss"],"names":[],"mappings":"AAEA,MCFA,KDGI,QAAS,KCHb,KAEI,UAAW","file":"www/css/project.min.css","sourcesContent":["@import 'partials/base';\n\n.test {\n    display: none;\n}","html {\n    display: none;\n    font-size: 12px;\n}"],"sourceRoot":"/source/"}
