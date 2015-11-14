@@ -185,7 +185,7 @@ var app = (function()
             if (beaconDict[packet[packet.length - 1][0]]) {
                 var current = beaconDict[packet[packet.length - 1][0]];
                 if (checkIn.length > 20) checkIn.shift();
-                if (packet[packet.length - 1][1] > current.strength){
+                if (packet[packet.length - 1][1] >= current.strength){
                   checkIn.push(current.area);
                 } else {
                     checkIn.push(null);
