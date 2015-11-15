@@ -3,7 +3,7 @@
 
   function config($stateProvider) {
     $stateProvider
-      .state('root.employee', {
+      .state('employee', {
         url: '/people',
         views: {
           '@': {

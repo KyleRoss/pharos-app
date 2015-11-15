@@ -5,5 +5,7 @@
 
     function HomeCtrl() {
         var vm = this;
+
+        vm.profile = localStorage.getItem('profile');
     }
 })();

@@ -21,28 +21,16 @@
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-      .state('root', {
-        views: {
-          'header': {
-            templateUrl: 'templates/header.tpl.html',
-            controller: 'HeaderCtrl as header'
-          },
-          'footer': {
-            templateUrl: 'templates/footer.tpl.html',
-            controller: 'FooterCtrl as footer'
-          }
-        }
-      })
-      .state('root.landing', {
+      .state('landing', {
         url: '/',
         views: {
           '@': {
             templateUrl: 'templates/landing.tpl.html',
-            controller: 'BaseCtrl as base'
+            controller: 'LandingCtrl as land'
           }
         }
       })
-      .state('root.home', {
+      .state('home', {
         url: '/home',
         views: {
           '@': {
@@ -72,16 +60,19 @@
       }
     });
 
-    $rootScope.login = function() {
+    $rootScope.login = function(username, password) {
       auth.signin({
+        connection: 'Username-Password-Authentication',
+        username: username,
+        password: password,
         authParams: {
-          scope: 'openid profile' // This gets us the entire user profile
+          scope: 'openid name email'
         }
       }, function (profile, token) {
         localStorage.setItem('profile', JSON.stringify(profile));
         localStorage.setItem('token', JSON.stringify(token));
 
-        $state.go('root.landing');
+        $state.go('home');
       }, function() {
         console.error("Failed to login the user!");
       });
@@ -92,11 +83,11 @@
       localStorage.removeItem('profile');
       localStorage.removeItem('token');
 
-      $state.go('root.landing', {}, {reload: true});
+      $state.go('landing', {}, {reload: true});
     };
   }
 
-  function BaseCtrl() {
+  function LandingCtrl() {
     var vm = this;
 
     vm.bizzles = new Array(100);
@@ -120,5 +111,5 @@
     ])
     .config(config)
     .run(run)
-    .controller('BaseCtrl', BaseCtrl);
+    .controller('LandingCtrl', LandingCtrl);
 })();

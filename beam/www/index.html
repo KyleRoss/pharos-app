@@ -39,15 +39,13 @@
     <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="vendor/auth0.js/build/auth0.js"></script>
     <script type="text/javascript" src="vendor/auth0-angular/build/auth0-angular.js"></script>
-    <script type="text/javascript" src="vendor/auth0-lock/build/auth0-lock.js"></script>
+    <!-- <script type="text/javascript" src="vendor/auth0-lock/build/auth0-lock.js"></script> -->
     <script type="text/javascript" src="vendor/ngCordova/dist/ng-cordova.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <!-- END VENDOR SCRIPTS -->
 
     <!-- APP SCRIPTS -->
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/beam/header.controller.js"></script>
-    <script type="text/javascript" src="js/beam/footer.controller.js"></script>
     <script type="text/javascript" src="js/beam/home.controller.js"></script>
     <script type="text/javascript" src="js/interceptors/http.interceptor.js"></script>
     <!-- END APP SCRIPTS -->
@@ -60,9 +58,7 @@
     <link rel="stylesheet" type="text/css" href="css/project.min.css" />
     <title>Beam</title>
   </head>
-  <body ng-class="$state.name">
-    <header ui-view="header" class="header"></header>
+  <body>
     <div ui-view class="main"></div>
-    <footer ui-view="footer" class="footer"></footer>
   </body>
 </html>
