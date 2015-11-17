@@ -226,7 +226,6 @@ var app = (function()
             $('#message').empty().append('Last Seen: ' + location.lastSeen);
             $('#message').append('<br />Count: ' + count);
             $('#message').append('<br />Checked In: ' + location.checkedIn);
-            $('#message').append('<br />Check In: ' + checkIn);
             $('#found-beacons').append(listItem);
             
         }, 1000);
